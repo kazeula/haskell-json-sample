@@ -63,10 +63,12 @@ $ stack haskell-json-sample-exe
 $ stack test
 ```
 
-今回はリポジトリに含めてしまっているが、
-Haddock(Javadocみたいなもの)は以下のコマンドで生成できる。
+HaddockはHaskellでいうJavadocみたいなものである。
+今回は説明のため、自作ライブラリ分のHaddockはリポジトリに含めてしまっている。
+Haddockは以下のコマンドで生成できる。
 ```
-$ stack haddock
+$ stack haddock --no-haddock-deps # 外部ライブラリのHaddockは生成しない
+$ stack haddock                   # 外部ライブラリのHaddockも生成
 ```
 
 ## 実行例
