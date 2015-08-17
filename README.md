@@ -55,7 +55,7 @@ $ stack build
 
 ビルドしたものは以下のコマンドで動かせる。
 ```
-$ stack haskell-json-sample-exe
+$ stack exec haskell-json-sample-exe
 ```
 
 テストはまだ用意していないが、テストがあればは以下のコマンドで実行できる。
